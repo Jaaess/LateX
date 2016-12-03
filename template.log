@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.12)  27 NOV 2016 19:42
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.12)  3 DEC 2016 20:43
 entering extended mode
 **template.tex
 (C:\Users\user\Desktop\Module\WS1617\wissenArbeit\acmsiggraph\template.tex
@@ -618,7 +618,20 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count146
 \@thisrulewidth=\dimen163
 )
-(C:\Users\user\Desktop\Module\WS1617\wissenArbeit\acmsiggraph\template.aux)
+(C:\Users\user\Desktop\Module\WS1617\wissenArbeit\acmsiggraph\template.aux
+
+LaTeX Warning: Label `tab:xtab' multiply defined.
+
+
+LaTeX Warning: Label `tab:xtab' multiply defined.
+
+
+LaTeX Warning: Label `tab:xtab' multiply defined.
+
+
+LaTeX Warning: Label `tab:xtab' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
@@ -634,8 +647,7 @@ LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 88.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -678,46 +690,46 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 88.
 LaTeX Info: Redefining \pageref on input line 88.
 LaTeX Info: Redefining \nameref on input line 88.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 119.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 122.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 119.
+(Font)              scaled to size 13.24796pt on input line 122.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 119.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
-(Font)              scaled to size 13.24796pt on input line 119.
+(Font)              scaled to size 13.24796pt on input line 122.
 
 <images/sampleteaser.pdf, id=3, 2055.68pt x 511.9125pt>
 File: images/sampleteaser.pdf Graphic file (type pdf)
 
 <use images/sampleteaser.pdf>
-Package pdftex.def Info: images/sampleteaser.pdf used on input line 119.
+Package pdftex.def Info: images/sampleteaser.pdf used on input line 122.
 (pdftex.def)             Requested size: 435.31276pt x 108.405pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 119.
+(caption)                particular \caption on input line 122.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 119.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 120.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 123.
 Excluding 'CCSXML' comment.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 172.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 175.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 172.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 175.
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 174.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -730,201 +742,259 @@ ser.pdf>]
 File: images/ferrari_laferrari.pdf Graphic file (type pdf)
 
 <use images/ferrari_laferrari.pdf>
-Package pdftex.def Info: images/ferrari_laferrari.pdf used on input line 237.
+Package pdftex.def Info: images/ferrari_laferrari.pdf used on input line 240.
 (pdftex.def)             Requested size: 216.81pt x 144.50435pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
 |[]\OT1/ptm/b/n/10 GRUNDLAGEN VON REST F[]UR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
 \OT1/ptm/b/n/10 ARCHITEKTUR-EVALUIERUNG (EVAL-U-A-
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 268--271
+Underfull \hbox (badness 1389) in paragraph at lines 271--274
 \OT1/ptm/m/n/9 Ein Cache-Element wirkt als Ver-mit-tler zwis-chen Client und
  []
 
 [2 <C:/Users/user/Desktop/Module/WS1617/wissenArbeit/acmsiggraph/images/ferrari
 _laferrari.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 280--283
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
 \OT1/ptm/m/n/9 Das Ar-chitek-tur-muster, das le-ichter die REST-Schicht-
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 293--297
+Underfull \hbox (badness 1389) in paragraph at lines 296--300
 \OT1/ptm/m/n/9 "Prag-ma-tis-che REST" gekennze-ich-net. B.S : JAX-RS (Java
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
 |[]\OT1/ptm/b/n/10 BEISPIELE F[]UR REST ALL-GE-MEINES
  []
 
 
 Underfull \vbox (badness 5231) has occurred while \output is active []
 
- [3]
-Underfull \hbox (badness 5288) in paragraph at lines 374--374
+
+Overfull \hbox (11.87701pt too wide) in paragraph at lines 308--350
+ [] 
+ []
+
+[3]
+Overfull \hbox (11.87701pt too wide) in paragraph at lines 350--382
+ [] 
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 387--387
 |[]\OT1/ptm/b/n/10 REST De-sign Fra-gen, die Qualit[]ats-Attribute
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 393--394
+\OT1/ptm/m/n/9 Das Dom[]anenmodell kann beispiel-sweise durch ein UML-
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 393--394
+\OT1/ptm/m/n/9 Klassendiagramm dargestellt wer-den. Es beschreibt die ver-
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 393--394
+\OT1/ptm/m/n/9 schiede-nen En-tit[]aten. Eval-u-a-toren soll-ten []uberpr[]ufen
+, ob
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 380--381
-\OT1/ptm/m/n/9 Das Dom[]anenmodell kann beispiel-sweise durch ein UML-
- []
-
-
-Underfull \hbox (badness 1189) in paragraph at lines 380--381
-\OT1/ptm/m/n/9 Klassendiagramm dargestellt wer-den. Es beschreibt die ver-
- []
-
-
-Underfull \hbox (badness 5147) in paragraph at lines 380--381
-\OT1/ptm/m/n/9 schiede-nen En-tit[]aten. Eval-u-a-toren soll-ten []uberpr[]ufen
-, ob
- []
-
-
-Underfull \hbox (badness 1527) in paragraph at lines 396--398
+Underfull \hbox (badness 1527) in paragraph at lines 409--411
 \OT1/ptm/m/n/9 Die Wahl des Darstel-lungs-for-mats bee-in-flusst auch die Leis-
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 403--410
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--423
 \OT1/ptm/m/n/9 Eine Ressource muss min-destens einen URI haben.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--410
+Underfull \hbox (badness 10000) in paragraph at lines 416--423
 \OT1/ptm/m/n/9 Das En-twer-fen von beschreiben-den URIs, die sich
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--410
+Underfull \hbox (badness 10000) in paragraph at lines 416--423
 \OT1/ptm/m/n/9 auf die Hi-er-ar-chie des Dom[]anenmodells beziehen,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--410
+Underfull \hbox (badness 10000) in paragraph at lines 416--423
 \OT1/ptm/m/n/9 verbessert das Zu-verl[]assigkeitsszenario R2. Z.B.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--410
+Underfull \hbox (badness 10000) in paragraph at lines 416--423
 \OT1/ptm/m/n/9 http://www.myweather.com/current/city/Brasilia. Die
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 403--410
+Underfull \hbox (badness 2103) in paragraph at lines 416--423
 \OT1/ptm/m/n/9 forderun-gen in-spizieren. Die Fes-tle-gung eines Musters zur
  []
 
-
-Underfull \hbox (badness 1661) in paragraph at lines 411--416
+[4]
+Underfull \hbox (badness 1661) in paragraph at lines 424--429
 \OT1/ptm/m/n/9 Wenn eine Repr[]asentation ge[]andert wird, k[]onnen Di-en-stkon
 -
  []
 
 
-Underfull \hbox (badness 1655) in paragraph at lines 411--416
+Underfull \hbox (badness 1655) in paragraph at lines 424--429
 \OT1/ptm/m/n/9 sumenten, die diese Ressource an-fordern, neg-a-tiv bee-in-fluss
 t
  []
 
 
-Underfull \hbox (badness 3209) in paragraph at lines 411--416
+Underfull \hbox (badness 3209) in paragraph at lines 424--429
 \OT1/ptm/m/n/9 wer-den. Die Ver-sion-ierung von Ressourcen ist eine gute
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 411--416
+Underfull \hbox (badness 4120) in paragraph at lines 424--429
 \OT1/ptm/m/n/9 Praxis, um dieses Prob-lem zu l[]osen, das das Mod-i-fizier-
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 411--416
+Underfull \hbox (badness 5862) in paragraph at lines 424--429
 \OT1/ptm/m/n/9 barkeit-sat-tribut M3 pos-i-tiv bee-in-flusst. Eine h[]aufig ver
 -
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 411--416
+Underfull \hbox (badness 1910) in paragraph at lines 424--429
 \OT1/ptm/m/n/9 wen-dete Strate-gie zur Ressourcenver-sion-ierung ist, eine Ver-
 
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 411--416
+Underfull \hbox (badness 4072) in paragraph at lines 424--429
 \OT1/ptm/m/n/9 sion-snum-mer in der URL einzuschlieen. Zum Beispiel:
  []
 
 
-Underfull \hbox (badness 4752) in paragraph at lines 442--445
+Underfull \hbox (badness 4752) in paragraph at lines 455--458
 \OT1/ptm/m/n/9 Eine gute Vorge-hensweise ist die Ver-wen-dung von Query
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 442--445
+Underfull \hbox (badness 4024) in paragraph at lines 455--458
 \OT1/ptm/m/n/9 Strings zur Angabe von Seiten-num-mer und gr[]oe. Z.B.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--445
+Underfull \hbox (badness 10000) in paragraph at lines 455--458
 \OT1/ptm/m/n/9 https://www.ufrj.com/courses?page=1&size=30. Pag-i-na-tion
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 451--451
+Underfull \hbox (badness 2302) in paragraph at lines 464--464
  |[]\OT1/cmr/m/sl/9 Wie schutzt man den Web-server von Request-
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 458--460
+Underfull \hbox (badness 4156) in paragraph at lines 471--473
 \OT1/ptm/m/n/9 Verschiedene Teile einer Ressource k[]onnen un-ter-schiedliche
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 460--460
+Underfull \hbox (badness 6592) in paragraph at lines 473--473
  |[]\OT1/cmr/m/sl/9 Was sind die Sicher-heitsmech-a-nis-men fur Di-
  []
 
 
-Underfull \hbox (badness 3746) in paragraph at lines 460--460
+Underfull \hbox (badness 3746) in paragraph at lines 473--473
  \OT1/cmr/m/sl/9 en-stkon-sumenten, um Ak-tio-nen auf Ressourcen
  []
 
-[5]
-Underfull \hbox (badness 3815) in paragraph at lines 465--467
+
+Underfull \hbox (badness 3815) in paragraph at lines 478--480
 \OT1/ptm/m/n/9 ge-nen Richtlin-ien in einem Nach-weis der Konzept-System-
  []
 
-No file template.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 505.
-[6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 505.
- (C:\Users\user\Desktop\Module\WS1617\wissenArbeit\acmsiggraph\template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 505.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 505.
+[5] <images/eco_dif_archi.png, id=96, 419.31656pt x 434.37282pt>
+File: images/eco_dif_archi.png Graphic file (type png)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+<use images/eco_dif_archi.png>
+Package pdftex.def Info: images/eco_dif_archi.png used on input line 493.
+(pdftex.def)             Requested size: 216.81pt x 224.59596pt.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 505.
+Overfull \hbox (11.87701pt too wide) in paragraph at lines 517--551
+ [] 
+ []
+
+[6 <C:/Users/user/Desktop/Module/WS1617/wissenArbeit/acmsiggraph/images/eco_dif
+_archi.png>]
+Overfull \hbox (11.87701pt too wide) in paragraph at lines 557--593
+ [] 
+ []
+
+
+Overfull \hbox (11.87701pt too wide) in paragraph at lines 597--610
+ [] 
+ []
+
+
+Overfull \hbox (11.87701pt too wide) in paragraph at lines 610--634
+ [] 
+ []
+
+
+Overfull \hbox (11.87701pt too wide) in paragraph at lines 639--668
+ [] 
+ []
+
+(C:\Users\user\Desktop\Module\WS1617\wissenArbeit\acmsiggraph\template.bbl
+Underfull \hbox (badness 3482) in paragraph at lines 9--12
+[]\OT1/ptm/m/sc/9 Anonymous\OT1/ptm/m/n/9 , 1976.  Planes of the head.  [][]$ht
+tp : / / www .$
+ []
+
+[7]
+Underfull \hbox (badness 1360) in paragraph at lines 66--72
+\OT1/ptm/m/n/9 accelerated re-light-ing en-gine for com-puter cin-e-matog-ra-ph
+y.
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 682.
+ [8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 682.
+
+(C:\Users\user\Desktop\Module\WS1617\wissenArbeit\acmsiggraph\template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 682.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 682.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 682.
  ) 
 Here is how much of TeX's memory you used:
- 8151 strings out of 494045
- 121195 string characters out of 3145972
- 228676 words of memory out of 3000000
- 11266 multiletter control sequences out of 15000+200000
- 21307 words of font info for 47 fonts, out of 3000000 for 9000
+ 8198 strings out of 494045
+ 122038 string characters out of 3145972
+ 243408 words of memory out of 3000000
+ 11289 multiletter control sequences out of 15000+200000
+ 23031 words of font info for 49 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 43i,15n,78p,583b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,15n,78p,583b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl9.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program File
@@ -935,9 +1005,9 @@ iKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on template.pdf (6 pages, 6635612 bytes).
+Output written on template.pdf (8 pages, 6799822 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

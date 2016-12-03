@@ -46,7 +46,7 @@
 
 \title{Evaluating a Representational State Transfer (REST) Architecture: What is the Impact of REST in My Architecture?}
 
-\author{Jawhar Ben Hadj M'barek\thanks{e-mail:spencer@cs.washington.edu}\\Chair, ACM SIGGRAPH Publications Committee}
+\author{Jawhar Ben Hadj M'barek\thanks{e-mail:s63338@beuth-hochschule.de}\\}
 \pdfauthor{Stephen N. Spencer}
 
 %%% Used by the ``review'' variation; the online ID will be printed on 
@@ -103,7 +103,10 @@
 \titleformat*{\subsection}{\large\bfseries}
 \titleformat*{\subsubsection}{\fontencoding{OT1}\fontfamily{cmr}\fontseries{m}%
   \fontshape{n}\fontsize{9pt}{9}\selectfont\slshape}
-
+  
+  
+% Caption option  Space between caption and the table
+\captionsetup[xtabular]{skip=0pt}  
 
 
 
@@ -302,11 +305,11 @@ Diese allgemeinen Szenarien sind in den REST-Designfragen (Abschnitt VI) verwies
 
 \begin{center}
  \topcaption{Allgemeine REST-Qualität Attributszenarien} \label{tab:xtab}
-  \begin{xtabular}{|C{2cm}|L{5,5cm}|} 
+  \begin{xtabular}{|C{2cm}|L{6cm}|} 
   \hline
     Quality Attribute & Szenario \\
     \hline
-   & \\ 
+    & \\[-2ex]
     Interoperabilität (Interoperability) & I1 - Ein  Service Verbraucher 'A' ruft eine Ressource 'R1' auf und
 erhält die Darstellung (Presentation) des aktuellen Zustandes von 'R1' in Response-Nachricht.
 I2 - Ein Service Verbraucher 'A' ruft eine Ressource 'R1' in einer
@@ -316,46 +319,56 @@ Nach dem gewünschten Format.
 I3 - Ein Service Verbraucher 'A' fordert eine Ressource 'R1' und
 Kann alle Informationen in der Antwort Nachricht nachvollziehen.
  \\ 
-    \hline
+       \hline
+       & \\[-2ex]
     Zuverlässigkeit (Reliability) & R1 - Ein Dienstverbraucher 'A' fordert eine Ressource 'R1' in einer spezifischen Version, die direct  in URI festgelegt ist, und empfängt die Darstellung des aktuellen Zustands von 'R1' in der Antwortnachricht.
 
 R2 - Basierend auf dem Domänenmodell baut ein Service-Verbraucher 'A' den URI der Ressource 'R1' auf und empfängt die Repräsentation des aktuellen Zustands von 'R1' als Antwort.
  \\ 
-    \hline
+      \hline
+      & \\[-2ex]
      Sicherheit  (Security) & 
      S1 - Ein Dienstverbraucher "A" mit zu wenig Berechtigungen (Zugangsdaten) verlangt geheim Informationen an eine Service Inteface "X", "X" verweigert die Anfrage und informiert "A" über die fehlende Berechtigung.
 
 S2 - Ein authentifizierter und autorisierter Dienstleistungsverbraucher "A" verlangt eine vertrauliche Ressource "R1", die er Zugriff darauf hat, und empfängt die Darstellung des aktuellen Zustands von "R1".
 
  \\ 
-    \hline
+       \hline
+      & \\[-2ex]
      Prüfbarkeit  (Testability) & 
      T1- Ein Entwickler möchte einen Service testen. Wenn bei der Verarbeitung der Anforderung ein Fehler auftritt, müssen alle Informationen über die Fehler und die Trace-Ausführung in Response enthalten sein. 
- \\ \hline
+ \\ 
+    \hline
+    & \\[-2ex]
      Performance & 
      P1 - Ein Service-Verbraucher 'A' führt eine Aktion in einer Ressource 'R1' aus und empfängt die Repräsentation des aktuellen Zustands von 'R1' in weniger als n Millisekunden als Reaction.\\ 
-    \hline
+       \hline
+       & \\[-2ex]
      Verfügbarkeit (Availability) & 
      Av1- Der Webserver, auf dem die REST-Services ausgeführt werden, wird mit einer Anzahl von Anfragen überflutet, die N Prozent höher als normal sind und die Services reagieren weiterhin.
  \\ 
-    \hline
+ \hline
+ & \\[-2ex]
      Modifizierbarkeit  (Modifiability) & 
      M1- Ein Entwickler modifiziert die Kernlogik und die internen Datenquellen eines  Services, der Dienstvertrag (uniform Interface, unterstützte URIs und Repräsentationen) bleibt jedoch derselbe. die Anstrengung, diese Veränderungen zu bewirken, ist an N Personentage gebunden.
 M2- Die Repräsentationsstruktur einer Ressource 'R1' und ihre Beziehungen zu anderen Ressourcen ändern sich und die Ressourcen-Identifikation (URI) ist nicht betroffen.
 M3- Ressourcendarstellungen werden modifiziert und die jeweiligen Services müssen korrekt Anforderungen  verarbeiten von Servicekonsumenten, die die alte Version verwenden, und von Verbraucher, die die neue Version der Ressourcen unter demselben URI verwenden.
 
  \\ 
-    \hline
+       \hline
+       & \\[-2ex]
      Sicherheit  (Safety) & 
      Sa1- Ein Dienstverbraucher 'A' führt viele Anfragen unter Verwendung der idempotent-Methode http PUT aus und die Ressource hat denselben Wert wie die erste.
 Sa2- Ein Service-Verbraucher 'A' führt Requests durch die Verwendung von sicheren Methoden (wie http GET und OPTIONS) und die Ressource wird nicht geändert.
 
  \\ 
-    \hline
+     \hline 
+     & \\[-2ex]
    Erkennbarkeit  (Discoverability) & 
      D1 - Ein Dienstverbraucher 'A' fordert eine Ressource 'R1' an und empfängt die URIs, die mit ‘R1’ um Ressourcen zu finden verbunden ist, in der Antwort verknüpft sind.
  \\ 
-    \hline
+       \hline 
+      & \\[-2ex]
      Funktionalität  (Functionality) & 
      F1 - Basierend auf der Standardorganisation einer Ressourcen-Identifikation in einer Service-Interface kann ein Service-Verbraucher 'A' einen Ressourcen-URI bilden.
 F2- Der Entwickler eines Service-Verbrauchers findet eine klare und aktuelle Dokumentation der Service-Schnittstelle.
@@ -475,9 +488,17 @@ Es ist eine Webplattform, um Geräte und Produkte mit Anwendungen und / oder End
 Die Verbindung wird zwischen dem Gerät und EcoDiF durch einen angepassten Treiber für das jeweilige Gerät aktiviert.
 Datennachrichten (Feeds genannt) werden mit EEML (Extended Environments Markup Language) [15]dargestellt, einer XML-basierten Sprache. 
 Die Daten werden von dem Gerät zu EcoDiF über http PUT gesendet und die Benutzer können die Daten über EcoDiF Data Manipulation Component manipulieren.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=3.0in]{images/eco_dif_archi}
+  \caption{EcoDiF Architekture}
+  \label{fig:ecoDiF_Architecture}
+\end{figure}
 Das Visualization and Management-modul bietet ein Webinterface für Benutzer um Alerts zu erfassen und historische Daten zu schauen.
 Das Collaboration Modul lässt EcoDiFF-Benutzer suchen. Das Storage Modul besteht aus zwei Repositories, einer relationalen Datenbank für die Daten Feeds und ein Repository zum Speichern von Anwendungsskripts in einem Dateisystem.
 Schließlich bietet das Applications-Modul ein Modell und eine Umgebung für die Programmierung und Ausführung von Anwendungen.
+
+
 
 \subsection{Architekturansätze von EcoDiF}
 Das Layered System (L) wird durch Gruppierung von Verantwortlichkeiten in drei Ebenen angewendet (Abb. 3): Web Interface, Middleware Services und Integrated Physical Devices.
@@ -485,12 +506,168 @@ Die Zustandslosigkeit (S) - der Zustand wird in Request nicht beibehalten; Alle 
 Das URI-Muster zur Identifikation des Feeds lautet:
 Ecodif.com / api / feed / [ID]. Die HTTP-Methode, die verwendet wird, um einen Feed anzufordern, ist GET. Der gleiche URI wird von Benutzeranbietern verwendet, um Feeds mit Hilfe von http PUT zu aktualisieren. Wenn ein Feed aktualisiert wird, antwortet EcoDiF mit dem http-Statuscode 201.
 Die Benutzeranmeldeinformationen müssen als HTTP-Header hinzugefügt werden.
+Die Ressourcen wurden nach dem EEML-Protokoll entworfen.
 Der Feed verwendet den Typ application / xml.
 EcoDiF hat keine Versionierung der Ressourcen-URI.
 \subsection{Konkrete Szenarien}
-
+Tabelle II zeigt drei Qualitätsattributszenarien für EcoDiF, die für eine REST-basierte Architektur important sind.
+\vspace{4px}
+\begin{center}
+ \topcaption{Konkrete Szenarien für den EcoDif} \label{tab:xtab}
+  \begin{xtabular}{|C{2cm}|L{6cm}|} 
+  \hline
+    Quality Attribute & Konkretes Szenario \\
+    \hline
+    & \\[-2ex]
+    Szenario  1.  Interoperablity &   \textbf{(Quelle)} EcoDifs Treiber / Data Provider.   \newline
+\textbf{(Stimulus)} Der Anbieter sendet Daten an die EcoDiF-Plattform.  \newline
+\textbf{(Artefact)} Driver / EcoDiF Schnittstelle.  \newline
+\textbf{(Umgebung)} normale Operation.  \newline
+\textbf{(Response)} Die Sensordaten werden gesendet und der Treiber erhält die Bestätigung aus der EcoDiF-Schnittstelle. \newline
+\textbf{(Response Measure)} Das System reagiert auf den Treiber in weniger als fünf Sekunden.
+   \\
+    \hline
+       & \\[-2ex]
+     Szenario  2.  Interoperablity & 
+    \textbf{(Quelle)} Data Consumer \newline
+\textbf{(Stimulus)} Daten-Verbraucher verlangt Feed-Daten \newline
+\textbf{(Artefakt)} EcoDiFs Schnittstelle \newline
+\textbf{(Umgebung)} normale Opeartion  \newline
+\textbf{(Response)} Das System sendet dem Benutzer die Ressourcendarstellung des Feeds \newline
+\textbf{(Response Measure)} Das System reagiert auf den Treiber in weniger als 1 Sekunde mit dem korrekten angeforderten Media-Type.
+ \\ 
+     \hline 
+     & \\[-2ex]
+   Szenario  3.  Testability & 
+\textbf{(Quelle)} Geräteherstellung (Devices manufacture)\newline
+\textbf{(Stimulus)} Die Geräteherstellung will einen neuen Treiber erstellen und Tests in der API von EcoDiF durchführen. \newline
+\textbf{(Artefakt)} Geräteanschluss \newline
+\textbf{(Umgebung)} normale Operation \newline
+\textbf{(Response)} Das System bietet eine Dokumentation zur Entwicklung des treibers (driver). \newline
+\textbf{(Response Measure)} Die Dokumentation bietet alle Informationen zum Entwickeln und Testen des Treibers.    
+ \\ 
+       \hline 
+ \end{xtabular}
+ \end{center}
 \subsection{Architekturanalyse}
+Die Architekturansätze wurden unter Verwendung von Richtlinien untersucht, die in Abschnitt VI referenziert werden.
+\vspace{4px}
+\begin{center}
+ \topcaption{Analyse für konkretes Szenario 1} \label{tab:xtab}
+  \begin{xtabular}{|C{2,5cm}|L{5,5cm}|} 
+  \hline
+  & \\[-2ex]
+    \textbf{Szenario-zusammenfassung} & 
+Die Sensordaten werden vom Treiber an EcoDiF gesendet. Das System aktualisiert den Feed und reagiert auf den Treiber in weniger als fünf Sekunden. \\
+    & \\[-2ex]
+  \hline
+  & \\[-2ex]
+    \textbf{Geschäftsziel} & Erlauben die Kommunikation von heterogenen Geräten mit EcoDiF \\
+    \hline
+    & \\[-2ex]
+   \textbf{ Qualitäts-merkmale } & Interoperabilität, Verfügbarkeit, Performance, Funktionalität.
+ \\ 
+     \hline
+       & \\[-2ex]
+    \textbf{Architektur-analyse} & 
+\item[-] Domain-basierte Vokabular (EEML) fördert Interoperabilität. \textbf{(Siehe Unterabschnitt B - Darstellung und Kennzeichnung, Frage 2)}
+\item[-] Durch die Verwendung von nur XML-Medientypen wird die Interoperabilität negativ beeinflusst \textbf{(siehe Abschnitt B - Repräsentation und Identifikation, Frage 1)}
+\item[-] Der URI ist nach dem Feedcode entwurft. Er fördert die Erweiterbarkeit, jedoch wirkt er sich negativ auf die Interoperabilität aus \textbf{(siehe Abschnitt B - Repräsentation und Identifikation, Frage 3)}
+\item[-] Die Methode zum Aktualisieren von Ressourcen ist PUT und sie ist idempotent. Das fördert die Zuverlässigkeit. \textbf{(Siehe Unterabschnitt B)}
+\item[-] Vertretung und Identifizierung, \textbf{(Frage 5)}
+\item[-] Die EcoDiF-Schnittstelle antwortet mit dem HTTP-Code 201, sie enthält jedoch nicht den Feed-URI. \textbf{(Siehe Unterabschnitt D - Verhalten, Frage 2)}.
+ \\ 
+     \hline 
+     & \\[-2ex]
+   \textbf{Risiken} & 
+\item[-] Treiber, die nicht XML verwenden, konnten keine Informationen an EcoDiF senden.
+\item[-] Das Design reagiert nicht mit dem Ressourcen-URI in Header.
+ \\ 
+       \hline 
+      & \\[-2ex]
+     \textbf{Trade-offs} & 
+     Die Verwendung verschiedener Medientypen fördert die Interoperabilität, fügt jedoch Komplexität bei der Implementierung und Validierung hinzu.
+\\    
+\hline 
+ \end{xtabular}
+ \end{center}
+\vspace{4px}
+\begin{center}
+ \topcaption{Analyse für konkretes Szenario 1} \label{tab:xtab}
+  \begin{xtabular}{|C{2,5cm}|L{5,5cm}|} 
+  \hline
+  & \\[-2ex]
+    \textbf{Szenario-zusammenfassung} & Verbraucher verlangt Informationen über einige Feeds und empfängt sie in weniger als 1 Sekunde mit dem richtigen angefordeten Medientyp. \\
+    & \\[-2ex]
+  \hline
+  & \\[-2ex]
+    \textbf{Geschäftsziel} & Ermöglichung eine einfache Visualisierung der Feeds \\
+    \hline
+    & \\[-2ex]
+   \textbf{ Qualitäts-merkmale } & Interoperabilität, Verfügbarkeit, Funktionalität,
+Anpassungsfähigkeit
+ \\ 
+     \hline
+       & \\[-2ex]
+    \textbf{Architektur-analyse} & 
+    \item[-] Der URI wird durch den Feedcode entworfen. Sie fördert die Erweiterbarkeit, beeinträchtigt aber die Usability (siehe Abschnitt B - Repräsentation und Identifikation, Frage 3).
+    \item[-] Es ist nicht möglich, den Medientyp in Requests anzugeben. Die Interoperabilität wird negativ beeinflusst.
+    \item[-] Es ist nicht möglich, angeforderte Attribute in den URI aufzunehmen. Performance und Bedienbarkeit sind negativ beeinflusst.
+(Siehe Abschnitt D - Verhalten, Frage 5)
 
+\item[-] Ressourcen sind nicht mit anderen verbunden. Die Navigierbarkeit wird negativ beeinflusst (siehe Unterabschnitt B - Darstellung und Identifikation, Frage 2)
+ \\ 
+     \hline 
+     & \\[-2ex]
+   \textbf{Risiken} & 
+ \item[-]Das Design erfüllt nicht die Anforderung in diesem Szenario.
+ \item[-]Weder die Version noch die gewünschten Felder werden in der Ressourcen-URI spezifiziert, HATEOAS wird nicht verwendet, daher können die Dienstkonsumenten nicht zu anderen zugehörigen Ressourcen navigieren..
+ \\ 
+       \hline 
+      & \\[-2ex]
+     \textbf{Trade-offs} & 
+\item[-]  Anpassungsfähigkeit wird bei der Versionierung von Ressourcen gefördert.
+\item[-] Das Angeben von Feldern in der Requests verbessert die Leistung, fügt jedoch Komplexität hinzu, um die Filterung in der Service-Schnittstelle zu implementieren.
+\\    
+\hline 
+ \end{xtabular}
+ \end{center}
+ 
+ \vspace{4px}
+\begin{center}
+ \topcaption{Analyse für konkretes Szenario 1} \label{tab:xtab}
+  \begin{xtabular}{|C{2,5cm}|L{5,5cm}|} 
+  \hline
+  & \\[-2ex]
+    \textbf{Szenario-zusammenfassung} & Szenario \\
+    & \\[-2ex]
+  \hline
+  & \\[-2ex]
+    \textbf{Geschäftsziel} & Szenario \\
+    \hline
+    & \\[-2ex]
+   \textbf{ Qualitäts-merkmale } & I1 - Ein  Service Verbraucher.I1 - Ein  Service Verbraucher.I1 - Ein  Service Verbraucher.I1 - Ein  Service Verbraucher.
+ \\ 
+     \hline
+       & \\[-2ex]
+    \textbf{Architektur-analyse} & 
+     Sa1- Ein Dienstverbraucher 'A' führt.
+ \\ 
+     \hline 
+     & \\[-2ex]
+   \textbf{Risiken} & 
+     D1 - Ein Dienstverbraucher 'A'.
+ \\ 
+       \hline 
+      & \\[-2ex]
+     \textbf{Trade-offs} & 
+     F1 - Basierend auf der Standardorganisatione.
+\\    
+\hline 
+ \end{xtabular}
+ \end{center}
+
+\cite{Jobs95}
 \section{Diskussion und zukünftige Arbeit:}
 
 
