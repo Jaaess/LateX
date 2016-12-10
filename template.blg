@@ -1,3 +1,28 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: template.aux
 The style file: acmsiggraph.bst
 Database file #1: template.bib
+I was expecting a `,' or a `}'---line 21 of file template.bib
+ :   
+ :   Software Architectures",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in wiki
+Warning--to sort, need author or key in OAuth
+Warning--to sort, need author or key in OpenID
+Too many commas in name 1 of "Kazman R., Klein M., Barbacci T., Longstaff T., Lipson H." for entry ATAM
+while executing---line 1276 of file acmsiggraph.bst
+Too many commas in name 1 of "Kazman R., Klein M., Barbacci T., Longstaff T., Lipson H." for entry ATAM
+while executing---line 1276 of file acmsiggraph.bst
+Too many commas in name 1 of "Kazman R., Klein M., Barbacci T., Longstaff T., Lipson H." for entry ATAM
+while executing---line 1276 of file acmsiggraph.bst
+Too many commas in name 1 of "Kazman R., Klein M., Barbacci T., Longstaff T., Lipson H." for entry ATAM
+while executing---line 1276 of file acmsiggraph.bst
+Warning--to sort, need author or key in EEML
+Warning--empty booktitle in 3
+Warning--empty year in royF
+Warning--empty school in royF
+Too many commas in name 1 of "Kazman R., Klein M., Barbacci T., Longstaff T., Lipson H." for entry ATAM
+while executing---line 1341 of file acmsiggraph.bst
+Too many commas in name 1 of "Kazman R., Klein M., Barbacci T., Longstaff T., Lipson H." for entry ATAM
+while executing---line 1341 of file acmsiggraph.bst
+(There were 7 error messages)
